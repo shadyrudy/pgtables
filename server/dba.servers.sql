@@ -11,12 +11,10 @@
 -- server_memory_GB - integer
 -- server_cpu_cores - integer
 -- server_type - varchar(255)
--- server_status - varchar(255)
 -- server_notes - text
 -- server_purchased - date
 -- server_expired - date
 -- server_created - timestamp
--- server_status  - integer
 -- server_status should be a foreign key that references the server_status_id column in the server_status table.
 -- server_type should be a foreign key that references the server_type_id column in the server_type table.
 -- last_updated - timestamp
@@ -28,7 +26,6 @@ create table dba.servers (
     server_os varchar(255),
     server_memory_GB integer,
     server_cpu_cores integer,
-    server_status integer,
     server_notes text,
     server_created date,
     server_retired date,

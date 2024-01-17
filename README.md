@@ -6,7 +6,7 @@ The following tables are used to collect metadata on postgresql.
 The following tables assume an outside process imports data at least once per day. 
 
 ## Project Outline
-Each folder within the project represents diffrent parts of the collection.
+Each folder within the project represents different parts of the collection.
 
 ### Database
 Tables for database specific information.
@@ -15,6 +15,7 @@ This includes
 2. Database Size
 3. Backup information
 4. Database specific configuration
+5. Database Permissions
 
 ### Server
 Tables for server level specific information.
@@ -42,3 +43,7 @@ This includes:
 # Version History
 ## 2023-01-08
 Initial commit
+
+## 2023-01-17
+Added dba.table_usage
+Renamed dba.table to dba.tables.
