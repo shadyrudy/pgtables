@@ -47,3 +47,6 @@ Initial commit
 ## 2023-01-17
 Added dba.table_usage
 Renamed dba.table to dba.tables.
+
+## 2023-01-18
+Added index size and row count columns to dba.tables.

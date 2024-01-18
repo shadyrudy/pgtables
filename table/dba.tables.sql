@@ -9,7 +9,9 @@
 -- schema_name - varchar(255)
 -- table_name - varchar(255)
 -- table_size_bytes - bigint
--- table_size - varchar(255)
+-- index_size_bytes - bigint
+-- total_size_bytes - bigint
+-- row_count - bigint
 -- last_updated - timestamp
 create table dba.tables (
     table_id serial primary key,
@@ -18,6 +20,8 @@ create table dba.tables (
     schema_name varchar(255) not null,
     table_name varchar(255) not null,
     table_size_bytes bigint,
-    table_size varchar(255),
+    index_size_bytes bigint,
+    total_size_bytes bigint,
+    row_count bigint,
     last_updated timestamp not null default current_timestamp    
 );
