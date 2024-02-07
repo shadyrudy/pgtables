@@ -40,6 +40,31 @@ This includes:
 2. Index sizes
 3. Table usage
 
+### Users
+User information at the server level including
+1. User Name
+2. Server Name
+3. Super User
+4. Create DB
+5. Inheritance
+6. Create Roles
+7. Can Login
+8. Connection Limit
+9. Password valud until
+10. Role Membership
+11. User specific configs
+
+### Grants
+Infromation on grants to roles
+This includes:
+1. Server Name
+2. Database Name
+3. Grantor
+4. Grantee
+5. Object
+6. Specifit Grant
+
+
 # Version History
 ## 2023-01-08
 Initial commit
@@ -50,3 +75,6 @@ Renamed dba.table to dba.tables.
 
 ## 2023-01-18
 Added index size and row count columns to dba.tables.
+
+## 2024-02-07
+Added dba.users table to hold server level user information. 
