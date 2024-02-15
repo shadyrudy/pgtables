@@ -62,7 +62,7 @@ This includes:
 3. Grantor
 4. Grantee
 5. Object
-6. Specifit Grant
+6. Specific Grant
 
 
 # Version History
@@ -78,3 +78,6 @@ Added index size and row count columns to dba.tables.
 
 ## 2024-02-07
 Added dba.users table to hold server level user information. 
+
+## 2024-02-15
+Renamed the table dba.index to dba.indexes. The word "index" is a reserved word.
