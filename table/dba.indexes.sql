@@ -1,4 +1,4 @@
--- Title: dba.index
+-- Title: dba.indexes
 -- The table dba.index contains information about indexes in a database.
 -- This includes index name, size, and the time the record was last updated.
 -- The table is denormalized and should be updated on a regular basis.
@@ -9,6 +9,7 @@
 -- schema_name - varchar(255)
 -- table_name - varchar(255)
 -- index_name - varchar(255)
+-- index_definition - varchar(255)
 -- index_size_bytes - bigint
 -- index_size - varchar(255)
 -- last_updated - timestamp
@@ -19,7 +20,8 @@ create table dba.indexes (
     schema_name varchar(255) not null,
     table_name varchar(255) not null,
     index_name varchar(255) not null,
+    index_definition varchar(255) not null,
     index_size_bytes bigint,
-    index_size varchar(255),
+    index_size varchar(255)
     last_updated timestamp not null default current_timestamp    
 );
