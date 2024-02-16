@@ -2,8 +2,8 @@
 A collection of tables for postgresql.
 
 # Project Description
-The following tables are used to collect metadata on postgresql. 
-The following tables assume an outside process imports data at least once per day. 
+The following tables are used to collect metadata on postgresql.
+The following tables assume an outside process imports data at least once per day.
 
 ## Project Outline
 Each folder within the project represents different parts of the collection.
@@ -37,8 +37,9 @@ This includes:
 Tables for table specific information.
 This includes:
 1. Table sizes
-2. Index sizes
-3. Table usage
+2. Table usage
+3. Index sizes
+4. Index definition
 
 ### Users
 User information at the server level including
@@ -77,7 +78,10 @@ Renamed dba.table to dba.tables.
 Added index size and row count columns to dba.tables.
 
 ## 2024-02-07
-Added dba.users table to hold server level user information. 
+Added dba.users table to hold server level user information.
 
 ## 2024-02-15
 Renamed the table dba.index to dba.indexes. The word "index" is a reserved word.
+
+## 2024-02-16
+Removed the column index_size from dba.indexes, which was a the index size in plain text e.g. 10MB.

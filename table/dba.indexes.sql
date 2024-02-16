@@ -22,6 +22,5 @@ create table dba.indexes (
     index_name varchar(255) not null,
     index_definition varchar(255) not null,
     index_size_bytes bigint,
-    index_size varchar(255),
     last_updated timestamp not null default current_timestamp    
 );
