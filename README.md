@@ -85,3 +85,7 @@ Renamed the table dba.index to dba.indexes. The word "index" is a reserved word.
 
 ## 2024-02-16
 Removed the column index_size from dba.indexes, which was a the index size in plain text e.g. 10MB.
+
+## 2025-08-19
+Added the dba schema, which was missing.
+Added a table for index usage.
